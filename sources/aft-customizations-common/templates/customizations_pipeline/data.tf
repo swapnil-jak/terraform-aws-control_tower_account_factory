@@ -31,7 +31,7 @@ data "aws_ssm_parameter" "aft_account_customizations_repo_branch" {
 
 # Lookups from terraform-aws-aft-pipeline-framework customizations module
 data "aws_kms_alias" "aft_key" {
-  name = "alias/aft"
+  name = "alias/aft-new"
 }
 
 data "aws_iam_role" "aft_codepipeline_customizations_role" {
